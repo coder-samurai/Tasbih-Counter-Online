@@ -4,11 +4,11 @@ var Counter = 0;
 
 
 AddButton.addEventListener("click", function() {
-    Counter += 99;
+    Counter += 1;
     if (Counter >= 999) {
         alert("This is the max, please reset the button.");
-        AddButton.innerHTML = 999;
-        Counter = 999;
+        AddButton.innerHTML = 0;
+        Counter = 0;
     } else {
         AddButton.innerHTML = Counter;
     }
